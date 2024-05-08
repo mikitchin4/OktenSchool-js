@@ -32,29 +32,27 @@
 
 // let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 //
-// for (const listOfItem of listOfItems) {
-//     document.write(`<ul>
-//     <li>${listOfItem}</li>
-// </ul>`)
+// document.write(`<ul>`)
+//     for (const listOfItem of listOfItems) {
+//     document.write (`<li>${listOfItem}</li>`)
 // }
+// document.write(`</ul>`)
 
 //
 // ШАБЛОН:
-//     <ul>
-//         <li>ITEM OF ARRAY</li>
-//         <!--
+// <ul>
+// <li>ITEM OF ARRAY</li>
+// <!--
 //             і тд інші об'єкти масиву
 //              ...
 //              ...
 //              ...
 //         -->
-//     </ul>
+// </ul>
 //
 // замість 'ITEM OF ARRAY' підставити елемент з масиву щоб получився цілий список з даними з масиву
 //
 // -----------------------------------------------
-
-
 
 
 //
@@ -64,7 +62,7 @@
 //
 
 // let products = [
-//     {
+// {
 //         title: 'milk',
 //         price: 22,
 //         image: 'https://www.mcqueensdairies.co.uk/wp-content/uploads/2019/02/Mcqueens_1litre_whole_organic-300x300-3.jpg'
@@ -122,13 +120,11 @@
 // за допомоги циклу вивести:
 // - користувачів зі статусом true
 
-// for (let i = 0; i < users.length; i++) {
-//     let user = users[i];
-//     if (users[i].status === true){
+// for (let user of users) {
+//     if (user.status === true) {
 //         console.log(user)
 //     }
 // }
-
 // - користувачів зі статусом false
 
 // for (let i = 0; i < users.length; i++) {
