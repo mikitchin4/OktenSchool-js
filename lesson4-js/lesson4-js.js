@@ -41,7 +41,7 @@
 //     {name: 'masha', age: 30, status: true},
 //     {name: 'olya', age: 31, status: false},
 //     {name: 'max', age: 31, status: true}
-// ];
+// ]
 // elementArrays(users)
 
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
@@ -51,7 +51,7 @@
 //         `<p>${productTitle}</p>`
 //     )
 // }
-// paragraph('idi naxyi zalupa')
+// paragraph('i love coffee')
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
