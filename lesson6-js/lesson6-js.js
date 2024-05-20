@@ -183,13 +183,13 @@
 //     if (card.cardSuit === 'space'){
 //         accumulator.spades.push(card)
 //     }
-//     if (card.cardSuit === 'diamond'){
+//     else if(card.cardSuit === 'diamond'){
 //         accumulator.diamonds.push(card)
 //     }
-//     if (card.cardSuit === 'heart'){
+//     else if (card.cardSuit === 'heart'){
 //         accumulator.hearts.push(card)
 //     }
-//     if (card.cardSuit === 'clubs'){
+//     else if (card.cardSuit === 'clubs'){
 //         accumulator.clubs.push(card)
 //     }
 //     return accumulator
@@ -279,20 +279,8 @@
 // --написати пошук всіх об'єктів, в який в modules є sass
 
 // let modulesSass = []
-// coursesArray.forEach(value => {
-//     if (value.modules.includes('sass')){
-//         modulesSass.push(value);
-//     }
-// })
+// coursesArray.filter(value => {value.modules.includes('sass') && modulesSass.push(value)})
 // console.log(modulesSass)
 
 // --написати пошук всіх об'єктів, в який в modules є docker
 
-// let modulesDocker = []
-// coursesArray.forEach(value => {
-//     if (value.modules.includes('docker')){
-//         modulesDocker.push(value)
-//     }
-// });
-//
-// console.log(modulesDocker)
