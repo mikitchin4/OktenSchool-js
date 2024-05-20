@@ -284,3 +284,6 @@
 
 // --написати пошук всіх об'єктів, в який в modules є docker
 
+// let modulesDocker = []
+// coursesArray.filter(value => {value.modules.includes('docker') && modulesDocker.push(value)})
+// console.log(modulesDocker)
