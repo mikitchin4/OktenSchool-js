@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users</title>
+</head>
+<body>
+
+<div id="usersList"></div>
+
+<script>
+    fetch(`https://jsonplaceholder.typicode.com/users`)
+        .then(response => response.json())
+        .then(data => users(data))
+
+    function users(users) {
+        const usersList = document.getElementById('usersList');
+        const ul = document.createElement('ul');
+        usersList.appendChild(ul);
+
+        users.forEach(user => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<a href="lesson11-js.html?id=${user.id}">${user.id} - ${user.name}</a>`;
+            ul.appendChild(listItem);
+        });
+    }
+</script>
+
+
+
+</body>
+</html>
