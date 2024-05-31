@@ -93,21 +93,21 @@
 // при кліку на посилання перехід на відповідну сторінку, на якій буде вся інформація про користувача (всі 15 полів)
 // отримана через додатковий запит (https://jsonplaceholder.typicode.com/users/XXX де ХХХ - айді користувача)
 
-const id = new URLSearchParams(window.location.search).get('id');
-
-fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
-    .then((response) => response.json())
-    .then((user) => {
-        const userDetails = document.getElementById('userDetails');
-        userDetails.innerHTML = `
-               <h2>${user.name}</h2>
-                <p>ID: ${user.id}</p>
-                <p>Email: ${user.email}</p>
-                <p>Address: ${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}</p>
-                <p>Phone: ${user.phone}</p>
-                <p>Website: ${user.website}</p>
-                <p>Company name: ${user.company.name}</p>
-                <p>Company Catch Phrase: ${user.company.catchPhrase}</p>
-                <p>Company BS: ${user.company.bs}</p>`;
-    })
+// const id = new URLSearchParams(window.location.search).get('id');
+//
+// fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+//     .then((response) => response.json())
+//     .then((user) => {
+//         const userDetails = document.getElementById('userDetails');
+//         userDetails.innerHTML = `
+//                <h2>${user.name}</h2>
+//                 <p>ID: ${user.id}</p>
+//                 <p>Email: ${user.email}</p>
+//                 <p>Address: ${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}</p>
+//                 <p>Phone: ${user.phone}</p>
+//                 <p>Website: ${user.website}</p>
+//                 <p>Company name: ${user.company.name}</p>
+//                 <p>Company Catch Phrase: ${user.company.catchPhrase}</p>
+//                 <p>Company BS: ${user.company.bs}</p>`;
+//     })
 
